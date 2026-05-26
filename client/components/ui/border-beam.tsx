@@ -33,9 +33,9 @@ export function BorderBeam({
       }
       className={cn(
         "pointer-events-none absolute inset-0 rounded-[inherit]",
-        "border-[length:var(--border-width)] border-transparent",
+        "border-(length:--border-width) border-transparent",
         "[background:linear-gradient(var(--card),var(--card))_padding-box,conic-gradient(from_calc(var(--angle,0deg)),transparent_0%,var(--color-from)_10%,var(--color-to)_20%,transparent_30%)_border-box]",
-        "animate-spin [animation-duration:var(--duration)]",
+        "animate-spin animation-duration-(--duration)",
         className
       )}
     />

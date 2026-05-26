@@ -73,7 +73,7 @@ export default function Navbar() {
                   Sản phẩm
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[480px] grid-cols-2 gap-2 p-4">
+                  <ul className="grid w-120 grid-cols-2 gap-2 p-4">
                     {products.map((p) => {
                       const Icon = p.icon;
                       return (
