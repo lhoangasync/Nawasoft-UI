@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/shared/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import { FloatingContactButton } from "@/components/shared/FloatingContactButton";
 
 const font = Be_Vietnam_Pro({
   subsets: ["vietnamese", "latin"],
@@ -18,7 +17,8 @@ export const metadata: Metadata = {
   title: "NawaSoft – Hệ Sinh Thái AI Marketing Toàn Diện",
   description:
     "Nawa Deploy, Nawa SEO, Nawa Facebook, Nawa Zalo — bộ 4 công cụ AI chuyên biệt giúp doanh nghiệp Việt tự động hóa marketing.",
-  keywords: "AI Marketing, Nawa SEO, Nawa Deploy, Nawa Facebook, Nawa Zalo, NawaSoft",
+  keywords:
+    "AI Marketing, Nawa SEO, Nawa Deploy, Nawa Facebook, Nawa Zalo, NawaSoft",
 };
 
 export default function RootLayout({
@@ -36,7 +36,6 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
-          <FloatingContactButton />
           <Toaster richColors position="bottom-right" />
         </ThemeProvider>
       </body>

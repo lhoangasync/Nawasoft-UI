@@ -112,7 +112,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <RainbowButton
-            className="h-8 rounded-full px-3 text-xs"
+            className="h-8 rounded-full px-3 text-md "
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
