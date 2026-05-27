@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "Nawa Deploy, Nawa SEO, Nawa Facebook, Nawa Zalo — bộ 4 công cụ AI chuyên biệt giúp doanh nghiệp Việt tự động hóa marketing.",
   keywords:
     "AI Marketing, Nawa SEO, Nawa Deploy, Nawa Facebook, Nawa Zalo, NawaSoft",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
