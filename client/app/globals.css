@@ -61,14 +61,6 @@
   --color-color-3: var(--color-3);
   --color-color-2: var(--color-2);
   --color-color-1: var(--color-1);
-  @keyframes rainbow {
-  0% {
-    background-position: 0%;
-    }
-  100% {
-    background-position: 200%;
-    }
-  }
 }
 
 :root {
@@ -183,6 +175,15 @@
   }
   to {
     transform: translateX(calc(-100% - var(--gap, 1.5rem)));
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
   }
 }
 
