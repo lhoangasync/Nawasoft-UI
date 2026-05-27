@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import { NumberTicker } from "@/components/ui/number-ticker";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export function HeroSection() {
   return (
@@ -45,21 +46,12 @@ export function HeroSection() {
         {/* CTAs */}
         <BlurFade delay={0.3} inView>
           <div className="mb-14 flex flex-wrap items-center justify-center gap-4">
-            <Button
-              asChild
-              size="lg"
-              className="rounded-full bg-linear-to-r from-violet-600 to-cyan-500 px-8 text-white hover:opacity-90"
-            >
+            <RainbowButton asChild size="lg">
               <Link href="#products">Xem sản phẩm</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="rounded-full border-violet-500/40 px-8 text-violet-400 hover:bg-violet-500/10"
-            >
+            </RainbowButton>
+            <RainbowButton asChild size="lg">
               <Link href="/contact">Liên hệ tư vấn</Link>
-            </Button>
+            </RainbowButton>
           </div>
         </BlurFade>
 
@@ -85,9 +77,7 @@ export function HeroSection() {
                     +
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Khách hàng
-                </p>
+                <p className="mt-1 text-xs text-muted-foreground">Khách hàng</p>
               </div>
               <div className="rounded-xl bg-cyan-500/10 p-4 text-center">
                 <NumberTicker
@@ -108,9 +98,7 @@ export function HeroSection() {
                     %
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Tiết kiệm
-                </p>
+                <p className="mt-1 text-xs text-muted-foreground">Tiết kiệm</p>
               </div>
             </div>
           </div>

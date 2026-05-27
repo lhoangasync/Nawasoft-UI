@@ -38,14 +38,9 @@ export function CtaSection() {
             <RainbowButton asChild size="lg">
               <Link href="/contact">Dùng thử miễn phí</Link>
             </RainbowButton>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="rounded-full border-violet-500/40 px-8"
-            >
+            <RainbowButton asChild size="lg">
               <Link href="#products">Xem sản phẩm</Link>
-            </Button>
+            </RainbowButton>
           </div>
         </BlurFade>
       </div>
