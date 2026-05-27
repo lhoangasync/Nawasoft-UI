@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/shared/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { FloatingContactButton } from "@/components/shared/FloatingContactButton";
 
 const font = Be_Vietnam_Pro({
   subsets: ["vietnamese", "latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <FloatingContactButton />
           <Toaster richColors position="bottom-right" />
         </ThemeProvider>
       </body>
